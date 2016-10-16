@@ -1,0 +1,4 @@
+move mouse (\-?[0-9]+) (\-?[0-9]+)-->xte 'mousermove $1 $2'
+speak ([0-9A-z_\?\.,! ]+)-->espeak "$1"
+reboot-->reboot
+camrecord ([0-9][0-9]):([0-9][0-9]):([0-9][0-9])-->streamer -q -c /dev/video0 -f rgb24 -r 3 -t $1:$2:$3 -o ~/outfile.avi
