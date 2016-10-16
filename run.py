@@ -115,6 +115,6 @@ if __name__ == "__main__":
 	parse_job_maps()
 	#do_sms_job("camrecord 00:00:10")
 	#do_sms_job("move mouse 200 100")
-	#app.run(debug=True, port=port)
+	app.run(debug=True, port=port)
 
 #https://demo.twilio.com/welcome/sms/reply/
